@@ -210,3 +210,17 @@ C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Adm
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.csproj.GenerateResource.Cache
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.dll
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.pdb
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\csc.exe.config
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\csc.rsp
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\csi.exe
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\csi.rsp
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\System.AppContext.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\vbc.exe.config
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\vbc.rsp

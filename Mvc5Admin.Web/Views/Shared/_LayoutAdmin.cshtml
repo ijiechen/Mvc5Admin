@@ -8,18 +8,19 @@
     <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
     <title>Angle - Bootstrap Admin Template</title>
     <!-- =============== VENDOR STYLES ===============-->
-    <link href="/bundles/fontawesome?v=bExtfhKSQtukvNM84IPl7Mu8FlR010DDddrO7S-Aono1" rel="stylesheet" />
-
-    <link href="/bundles/simpleLineIcons?v=BKAZXxqQwfZYdBolMn1L0buIoK7m1JDPDtSTtRIQxJw1" rel="stylesheet" />
-
-    <link href="/bundles/animatecss?v=4Ht_uZ12jGKFxFuani7LCjs5Eo-SH6GeP6_DKIwSvck1" rel="stylesheet" />
-
-    <link href="/bundles/whirl?v=vwnGjMYObhemRs1vI5mYSdMDK5D-R9tQqXAOIrJxxAs1" rel="stylesheet" />
+    @Styles.Render("~/Content/fontawesome")
+    @Styles.Render("~/Content/simpleLineIcons")
+    @Styles.Render("~/Content/animatecss")
+    @Styles.Render("~/Content/whirl")
 
     <!-- =============== PAGE VENDOR STYLES =============== -->
     <!-- =============== BOOTSTRAP STYLES ===============-->
+    @*@Styles.Render("~/Content/bootstrap")*@
     <link href="/Content/app/css/bootstrap.css" rel="stylesheet" type="text/css" id="bscss" />
+
     <!-- =============== APP STYLES ===============-->
+    @*@Styles.Render("~/Content/app")
+        @Styles.Render("~/Content/mvc-override")*@
     <link href="/Content/app/css/app.css" rel="stylesheet" type="text/css" id="maincss" />
     <link href="/Content/mvc-override.css" rel="stylesheet" type="text/css" />
 
@@ -59,7 +60,7 @@
                         <!-- START User avatar toggle-->
                         <li>
                             <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
-                            <a id="user-block-toggle" href="#user-block" data-toggle="collapse">
+                            <a id="user-block-toggle" href="#user-block" data-toggle="collapse" aria-expanded="true" class="">
                                 <em class="icon-user"></em>
                             </a>
                         </li>
@@ -184,12 +185,12 @@
                     <ul class="nav">
                         <!-- START user info-->
                         <li class="has-user-block">
-                            <div id="user-block" class="collapse">
+                            <div id="user-block" class="collapse in" aria-expanded="true">
                                 <div class="item user-block">
                                     <!-- User picture-->
                                     <div class="user-block-picture">
                                         <div class="user-block-status">
-                                            <img src="/Content/Images/user/02.jpg" alt="Avatar" width="60" height="60" class="img-thumbnail img-circle" />
+                                            <img src="/Content/Images/user/02.jpg" alt="Avatar" width="60" height="60" class="img-thumbnail img-circle">
                                             <div class="circle circle-success circle-lg"></div>
                                         </div>
                                     </div>
@@ -803,7 +804,7 @@
             <!-- END Sidebar (left)-->
         </aside>
         <!-- offsidebar-->
-        <aside class="offsidebar hide">
+        <aside class="offsidebar">
             <!-- START Off Sidebar (right)-->
             <nav>
                 <div role="tabpanel">
@@ -830,7 +831,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-a.css">
-                                                <input type="radio" name="setting-theme" checked="checked" />
+                                                <input type="radio" name="setting-theme" checked="checked">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-info"></span>
@@ -843,7 +844,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-b.css">
-                                                <input type="radio" name="setting-theme" />
+                                                <input type="radio" name="setting-theme">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-green"></span>
@@ -856,7 +857,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-c.css">
-                                                <input type="radio" name="setting-theme" />
+                                                <input type="radio" name="setting-theme">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-purple"></span>
@@ -869,7 +870,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-d.css">
-                                                <input type="radio" name="setting-theme" />
+                                                <input type="radio" name="setting-theme">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-danger"></span>
@@ -884,7 +885,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-e.css">
-                                                <input type="radio" name="setting-theme" />
+                                                <input type="radio" name="setting-theme">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-info-dark"></span>
@@ -897,7 +898,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-f.css">
-                                                <input type="radio" name="setting-theme" />
+                                                <input type="radio" name="setting-theme">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-green-dark"></span>
@@ -910,7 +911,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-g.css">
-                                                <input type="radio" name="setting-theme" />
+                                                <input type="radio" name="setting-theme">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-purple-dark"></span>
@@ -923,7 +924,7 @@
                                     <div class="col mb">
                                         <div class="setting-color">
                                             <label data-load-css="/Content/app/css/theme-h.css">
-                                                <input type="radio" name="setting-theme" />
+                                                <input type="radio" name="setting-theme">
                                                 <span class="icon-check"></span>
                                                 <span class="split">
                                                     <span class="color bg-danger-dark"></span>
@@ -1030,13 +1031,13 @@
                                         </span>
                                         <span class="pull-left">
                                             <!-- Contact avatar-->
-                                            <img src="/Content/Images/user/05.jpg" alt="Image" class="media-box-object img-circle thumb48" />
+                                            <img src="/Content/Images/user/05.jpg" alt="Image" class="media-box-object img-circle thumb48">
                                         </span>
                                         <!-- Contact info-->
                                         <span class="media-box-body">
                                             <span class="media-box-heading">
                                                 <strong>Juan Sims</strong>
-                                                <br />
+                                                <br>
                                                 <small class="text-muted">Designeer</small>
                                             </span>
                                         </span>
@@ -1049,13 +1050,13 @@
                                         </span>
                                         <span class="pull-left">
                                             <!-- Contact avatar-->
-                                            <img src="/Content/Images/user/06.jpg" alt="Image" class="media-box-object img-circle thumb48" />
+                                            <img src="/Content/Images/user/06.jpg" alt="Image" class="media-box-object img-circle thumb48">
                                         </span>
                                         <!-- Contact info-->
                                         <span class="media-box-body">
                                             <span class="media-box-heading">
                                                 <strong>Maureen Jenkins</strong>
-                                                <br />
+                                                <br>
                                                 <small class="text-muted">Designeer</small>
                                             </span>
                                         </span>
@@ -1068,13 +1069,13 @@
                                         </span>
                                         <span class="pull-left">
                                             <!-- Contact avatar-->
-                                            <img src="/Content/Images/user/07.jpg" alt="Image" class="media-box-object img-circle thumb48" />
+                                            <img src="/Content/Images/user/07.jpg" alt="Image" class="media-box-object img-circle thumb48">
                                         </span>
                                         <!-- Contact info-->
                                         <span class="media-box-body">
                                             <span class="media-box-heading">
                                                 <strong>Billie Dunn</strong>
-                                                <br />
+                                                <br>
                                                 <small class="text-muted">Designeer</small>
                                             </span>
                                         </span>
@@ -1087,13 +1088,13 @@
                                         </span>
                                         <span class="pull-left">
                                             <!-- Contact avatar-->
-                                            <img src="/Content/Images/user/08.jpg" alt="Image" class="media-box-object img-circle thumb48" />
+                                            <img src="/Content/Images/user/08.jpg" alt="Image" class="media-box-object img-circle thumb48">
                                         </span>
                                         <!-- Contact info-->
                                         <span class="media-box-body">
                                             <span class="media-box-heading">
                                                 <strong>Tomothy Roberts</strong>
-                                                <br />
+                                                <br>
                                                 <small class="text-muted">Designer</small>
                                             </span>
                                         </span>
@@ -1113,13 +1114,13 @@
                                         </span>
                                         <span class="pull-left">
                                             <!-- Contact avatar-->
-                                            <img src="/Content/Images/user/09.jpg" alt="Image" class="media-box-object img-circle thumb48" />
+                                            <img src="/Content/Images/user/09.jpg" alt="Image" class="media-box-object img-circle thumb48">
                                         </span>
                                         <!-- Contact info-->
                                         <span class="media-box-body">
                                             <span class="media-box-heading">
                                                 <strong>Lawrence Robinson</strong>
-                                                <br />
+                                                <br>
                                                 <small class="text-muted">Developer</small>
                                             </span>
                                         </span>
@@ -1132,13 +1133,13 @@
                                         </span>
                                         <span class="pull-left">
                                             <!-- Contact avatar-->
-                                            <img src="/Content/Images/user/10.jpg" alt="Image" class="media-box-object img-circle thumb48" />
+                                            <img src="/Content/Images/user/10.jpg" alt="Image" class="media-box-object img-circle thumb48">
                                         </span>
                                         <!-- Contact info-->
                                         <span class="media-box-body">
                                             <span class="media-box-heading">
                                                 <strong>Tyrone Owens</strong>
-                                                <br />
+                                                <br>
                                                 <small class="text-muted">Designer</small>
                                             </span>
                                         </span>
@@ -1197,6 +1198,17 @@
         </footer>
     </div>
     <!-- =============== VENDOR SCRIPTS ===============-->
+    @*@Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/matchMedia")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/storage")
+    @Scripts.Render("~/bundles/jqueryEasing")
+    @Scripts.Render("~/bundles/animo")
+    @Scripts.Render("~/bundles/slimscroll")
+    @Scripts.Render("~/bundles/screenfull")
+    @Scripts.Render("~/bundles/localize")
+    @Scripts.Render("~/bundles/demoRTL")*@
     <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
 
     <script src="/bundles/matchMedia?v=WnuluPyN7AvyRbRnNfJnsOoACH9UH3I_l_CyDPbMwKQ1"></script>
@@ -1221,7 +1233,8 @@
 
     <!-- =============== PAGE VENDOR SCRIPTS ===============-->
     <!-- =============== APP SCRIPTS ===============-->
-    <script src="/bundles/Angle?v=iRLqdlmbhHhRDKCgfFr5YFy-OBwT2hOmRO-XweMNzKo1"></script>
+    @Scripts.Render("~/bundles/Angle")
+    @RenderSection("scripts", required: false)
 
 </body>
 </html>
