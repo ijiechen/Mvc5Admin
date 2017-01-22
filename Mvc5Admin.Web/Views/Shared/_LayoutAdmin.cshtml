@@ -35,10 +35,10 @@
                 <div class="navbar-header">
                     <a href="#/" class="navbar-brand">
                         <div class="brand-logo">
-                            <img src="/Content/Images/logo.png" alt="App Logo" class="img-responsive" />
+                            <img src="/Content/Images/logo.png" alt="App Logo" class="img-responsive">
                         </div>
                         <div class="brand-logo-collapsed">
-                            <img src="/Content/Images/logo-single.png" alt="App Logo" class="img-responsive" />
+                            <img src="/Content/Images/logo-single.png" alt="App Logo" class="img-responsive">
                         </div>
                     </a>
                 </div>
@@ -60,7 +60,7 @@
                         <!-- START User avatar toggle-->
                         <li>
                             <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
-                            <a id="user-block-toggle" href="#user-block" data-toggle="collapse" aria-expanded="true" class="">
+                            <a id="user-block-toggle" href="#user-block" data-toggle="collapse" class="" aria-expanded="true">
                                 <em class="icon-user"></em>
                             </a>
                         </li>
@@ -167,7 +167,7 @@
                 <!-- START Search form-->
                 <form role="search" action="search.html" class="navbar-form">
                     <div class="form-group has-feedback">
-                        <input type="text" placeholder="Type and hit enter ..." class="form-control" />
+                        <input type="text" placeholder="Type and hit enter ..." class="form-control">
                         <div data-search-dismiss="" class="fa fa-times form-control-feedback"></div>
                     </div>
                     <button type="submit" class="hidden btn btn-default">Submit</button>
@@ -441,11 +441,11 @@
                             </ul>
                         </li>
                         <li class="active">
-                            <a href="#tables" title="Tables" data-toggle="collapse">
+                            <a href="#tables" title="Tables" data-toggle="collapse" class="collapsed" aria-expanded="false">
                                 <em class="icon-grid"></em>
                                 <span data-localize="sidebar.nav.table.TABLE">Tables</span>
                             </a>
-                            <ul id="tables" class="nav sidebar-subnav collapse">
+                            <ul id="tables" class="nav sidebar-subnav collapse" aria-expanded="false" style="height: 0px;">
                                 <li class="sidebar-subnav-header">Tables</li>
                                 <li class="active">
                                     <a href="/Tables/TableStandard" title="Standard">
@@ -1187,28 +1187,27 @@
             <!-- Page content-->
             <div class="content-wrapper">
 
-
                 @RenderBody()
 
             </div>
         </section>
         <!-- Page footer-->
         <footer>
-            <span>&copy; 2016 - Angle</span>
+            <span>© 2016 - Angle</span>
         </footer>
     </div>
     <!-- =============== VENDOR SCRIPTS ===============-->
     @*@Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/matchMedia")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/storage")
-    @Scripts.Render("~/bundles/jqueryEasing")
-    @Scripts.Render("~/bundles/animo")
-    @Scripts.Render("~/bundles/slimscroll")
-    @Scripts.Render("~/bundles/screenfull")
-    @Scripts.Render("~/bundles/localize")
-    @Scripts.Render("~/bundles/demoRTL")*@
+        @Scripts.Render("~/bundles/matchMedia")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/storage")
+        @Scripts.Render("~/bundles/jqueryEasing")
+        @Scripts.Render("~/bundles/animo")
+        @Scripts.Render("~/bundles/slimscroll")
+        @Scripts.Render("~/bundles/screenfull")
+        @Scripts.Render("~/bundles/localize")
+        @Scripts.Render("~/bundles/demoRTL")*@
     <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
 
     <script src="/bundles/matchMedia?v=WnuluPyN7AvyRbRnNfJnsOoACH9UH3I_l_CyDPbMwKQ1"></script>
