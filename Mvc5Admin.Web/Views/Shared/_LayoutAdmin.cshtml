@@ -13,16 +13,22 @@
     @Styles.Render("~/Content/animatecss")
     @Styles.Render("~/Content/whirl")
 
+    @*<link href="/bundles/fontawesome.css?v=bExtfhKSQtukvNM84IPl7Mu8FlR010DDddrO7S-Aono1" rel="stylesheet" />
+        <link href="/bundles/simpleLineIcons.css?v=BKAZXxqQwfZYdBolMn1L0buIoK7m1JDPDtSTtRIQxJw1" rel="stylesheet" />
+        <link href="/bundles/animatecss.css?v=4Ht_uZ12jGKFxFuani7LCjs5Eo-SH6GeP6_DKIwSvck1" rel="stylesheet" />
+        <link href="/bundles/whirl.css?v=vwnGjMYObhemRs1vI5mYSdMDK5D-R9tQqXAOIrJxxAs1" rel="stylesheet" />*@
+
     <!-- =============== PAGE VENDOR STYLES =============== -->
     <!-- =============== BOOTSTRAP STYLES ===============-->
-    @*@Styles.Render("~/Content/bootstrap")*@
-    <link href="/Content/app/css/bootstrap.css" rel="stylesheet" type="text/css" id="bscss" />
+    @Styles.Render("~/Content/bootstrap")
+    @*<link href="/Content/app/css/bootstrap.css" rel="stylesheet" type="text/css" id="bscss" />*@
 
     <!-- =============== APP STYLES ===============-->
-    @*@Styles.Render("~/Content/app")
-        @Styles.Render("~/Content/mvc-override")*@
-    <link href="/Content/app/css/app.css" rel="stylesheet" type="text/css" id="maincss" />
-    <link href="/Content/mvc-override.css" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Content/app")
+    @Styles.Render("~/Content/mvc-override")
+    @*<link href="/Content/app/css/app.css" rel="stylesheet" type="text/css" id="maincss" />*@
+    @*<link href="/Content/mvc-override.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="/bundles/mvc-override.css" rel="stylesheet" type="text/css" />*@
 
 </head>
 <body>
@@ -1186,9 +1192,7 @@
         <section>
             <!-- Page content-->
             <div class="content-wrapper">
-
                 @RenderBody()
-
             </div>
         </section>
         <!-- Page footer-->
@@ -1197,41 +1201,44 @@
         </footer>
     </div>
     <!-- =============== VENDOR SCRIPTS ===============-->
-    @*@Scripts.Render("~/bundles/modernizr")
-        @Scripts.Render("~/bundles/matchMedia")
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @Scripts.Render("~/bundles/storage")
-        @Scripts.Render("~/bundles/jqueryEasing")
-        @Scripts.Render("~/bundles/animo")
-        @Scripts.Render("~/bundles/slimscroll")
-        @Scripts.Render("~/bundles/screenfull")
-        @Scripts.Render("~/bundles/localize")
-        @Scripts.Render("~/bundles/demoRTL")*@
-    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/matchMedia")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/storage")
+    @Scripts.Render("~/bundles/jqueryEasing")
+    @Scripts.Render("~/bundles/animo")
+    @Scripts.Render("~/bundles/slimscroll")
+    @Scripts.Render("~/bundles/screenfull")
+    @Scripts.Render("~/bundles/localize")
+    @Scripts.Render("~/bundles/demoRTL")
+    @*<script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
 
-    <script src="/bundles/matchMedia?v=WnuluPyN7AvyRbRnNfJnsOoACH9UH3I_l_CyDPbMwKQ1"></script>
+        <script src="/bundles/matchMedia?v=WnuluPyN7AvyRbRnNfJnsOoACH9UH3I_l_CyDPbMwKQ1"></script>
 
-    <script src="/bundles/jquery?v=HoRQ09kYLXZV2fRPio-4sFwem_LiuM00HkYeh777jks1"></script>
+        <script src="/bundles/jquery?v=HoRQ09kYLXZV2fRPio-4sFwem_LiuM00HkYeh777jks1"></script>
 
-    <script src="/bundles/bootstrap?v=lescQEuG5u4jd-GcVDBcbpUOSyTDIg0Kk9zHDX55GCw1"></script>
+        <script src="/bundles/bootstrap?v=lescQEuG5u4jd-GcVDBcbpUOSyTDIg0Kk9zHDX55GCw1"></script>
 
-    <script src="/bundles/storage?v=MjW9sAQyekD1fZC9OvYcvH9AcAP-yzpFgN_GAfIKYzQ1"></script>
+        <script src="/bundles/storage.js?v=MjW9sAQyekD1fZC9OvYcvH9AcAP-yzpFgN_GAfIKYzQ1"></script>
 
-    <script src="/bundles/jqueryEasing?v=4g0GzrvqgSb3qH6YB75KCFet0wMYAM2gponYpqQLnQw1"></script>
+        <script src="/bundles/jqueryEasing?v=4g0GzrvqgSb3qH6YB75KCFet0wMYAM2gponYpqQLnQw1"></script>
 
-    <script src="/bundles/animo?v=PNRfRgqPzhf1xESmcI7tlTGp65_aZtoC1EbaOrypSTo1"></script>
+        <script src="/bundles/animo?v=PNRfRgqPzhf1xESmcI7tlTGp65_aZtoC1EbaOrypSTo1"></script>
 
-    <script src="/bundles/slimscroll?v=3uYrRzzSHN-ciPYhy9dHU0PmQ_ovS7mA95ebgy_Y5Uk1"></script>
+        <script src="/bundles/slimscroll?v=3uYrRzzSHN-ciPYhy9dHU0PmQ_ovS7mA95ebgy_Y5Uk1"></script>
 
-    <script src="/bundles/screenfull?v=ooQl8eiyNiyghotzuutqwnzB6aZs1_ykb2bK5hBKidk1"></script>
+        <script src="/bundles/screenfull?v=ooQl8eiyNiyghotzuutqwnzB6aZs1_ykb2bK5hBKidk1"></script>
 
-    <script src="/bundles/localize?v=CxTOhzP9-4mo2IUCaGN_DuRJqVQ9cxUhhISkejeyL0c1"></script>
+        <script src="/bundles/localize?v=CxTOhzP9-4mo2IUCaGN_DuRJqVQ9cxUhhISkejeyL0c1"></script>
 
-    <script src="/bundles/demoRTL?v=bWmGkpFT57gqVqU66qhNSwr_x38gmMpx0_Jxiz7wUAw1"></script>
+        <script src="/bundles/demoRTL?v=bWmGkpFT57gqVqU66qhNSwr_x38gmMpx0_Jxiz7wUAw1"></script>*@
 
+    @*<script src="/bundles/screenfull?v=ooQl8eiyNiyghotzuutqwnzB6aZs1_ykb2bK5hBKidk1"></script>*@
     <!-- =============== PAGE VENDOR SCRIPTS ===============-->
     <!-- =============== APP SCRIPTS ===============-->
+    @*<script src="/bundles/Angle.js?v=iRLqdlmbhHhRDKCgfFr5YFy-OBwT2hOmRO-XweMNzKo1"></script>*@
+
     @Scripts.Render("~/bundles/Angle")
     @RenderSection("scripts", required: false)
 

@@ -249,6 +249,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="bundles\Angle.js" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\animate.min.css" />
     <Content Include="Content\app.css" />
@@ -258,14 +259,25 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\logo-single.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\user\02.jpg" />
+    <Content Include="Content\images\user\05.jpg" />
+    <Content Include="Content\images\user\06.jpg" />
+    <Content Include="Content\images\user\07.jpg" />
+    <Content Include="Content\images\user\08.jpg" />
+    <Content Include="Content\images\user\09.jpg" />
+    <Content Include="Content\images\user\10.jpg" />
     <Content Include="Content\mvc-override.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\simple-line-icons.css" />
     <Content Include="Content\whirl.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\Angle.js" />
     <Content Include="Scripts\Angle.min.js" />
     <Content Include="Scripts\animateCss.min.js" />
     <Content Include="Scripts\animateCss\animateCss.js" />
@@ -510,7 +522,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="bundles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

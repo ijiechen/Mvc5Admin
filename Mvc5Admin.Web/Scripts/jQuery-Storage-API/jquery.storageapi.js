@@ -83,7 +83,7 @@
 
     // Set items of a storage
     function _set() {
-        var storage = this._type, l = arguments.length, s = window[storage], a = arguments, a0 = a[0], a1 = a[1], vi, to_store = isNaN(a1) ? {} : [], type, tmp;
+        var storage = this._type, l = arguments.length, s = window[storage], a = arguments, a0 = a[0], a1 = a[1], vi, to_store = isNaN(a1)?{}:[], type, tmp;
         if (l < 1 || !$.isPlainObject(a0) && l < 2) {
             throw new Error('Minimum 2 arguments must be given or first parameter must be an object');
         } else if ($.isPlainObject(a0)) {
@@ -119,9 +119,9 @@
             // Parse next levels and set value
             for (var i = 1; i < l - 2; i++) {
                 vi = a[i];
-                type = isNaN(a[i + 1]) ? "object" : "array";
-                if (!tmp[vi] || type == "object" && !$.isPlainObject(tmp[vi]) || type == "array" && !$.isArray(tmp[vi])) {
-                    if (type == "array") tmp[vi] = [];
+                type = isNaN(a[i+1])?"object":"array";
+                if (!tmp[vi] || type == "object" && !$.isPlainObject(tmp[vi]) || type=="array" && !$.isArray(tmp[vi])) {
+                    if(type=="array") tmp[vi] = [];
                     else tmp[vi] = {};
                 }
                 tmp = tmp[vi];
@@ -210,7 +210,7 @@
                 var v = _get.apply(this, arguments);
                 // Convert result to an object (if last argument is an array, _get return already an object) and test each item
                 if (!$.isArray(a[l - 1])) {
-                    v = { 'totest': v };
+                    v = {'totest': v};
                 }
                 for (var i in v) {
                     if (!(
@@ -248,7 +248,7 @@
                 var v = _get.apply(this, arguments);
                 // Convert result to an object (if last argument is an array, _get return already an object) and test each item
                 if (!$.isArray(a[l - 1])) {
-                    v = { 'totest': v };
+                    v = {'totest': v};
                 }
                 for (var i in v) {
                     if (!(v[i] !== undefined && v[i] !== null)) {
@@ -310,14 +310,14 @@
             }
         }
         var ns = {
-            localStorage: $.extend({}, $.localStorage, { _ns: name }),
-            sessionStorage: $.extend({}, $.sessionStorage, { _ns: name })
+            localStorage: $.extend({}, $.localStorage, {_ns: name}),
+            sessionStorage: $.extend({}, $.sessionStorage, {_ns: name})
         };
         if (typeof Cookies !== 'undefined') {
             if (!window.cookieStorage.getItem(name)) {
                 window.cookieStorage.setItem(name, '{}');
             }
-            ns.cookieStorage = $.extend({}, $.cookieStorage, { _ns: name });
+            ns.cookieStorage = $.extend({}, $.cookieStorage, {_ns: name});
         }
         $.namespaceStorages[name] = ns;
         return ns;
@@ -431,13 +431,13 @@
             _path: null,
             _domain: null,
             setItem: function (n, v) {
-                Cookies.set(this._prefix + n, v, { expires: this._expires, path: this._path, domain: this._domain });
+                Cookies.set(this._prefix + n, v, {expires: this._expires, path: this._path, domain: this._domain});
             },
             getItem: function (n) {
                 return Cookies.get(this._prefix + n);
             },
             removeItem: function (n) {
-                return Cookies.remove(this._prefix + n, { path: this._path });
+                return Cookies.remove(this._prefix + n, {path: this._path});
             },
             clear: function () {
                 for (var key in Cookies.get()) {
@@ -481,7 +481,7 @@
                 _prefix: cookie_local_prefix,
                 _expires: 365 * 10
             });
-            window.sessionCookieStorage = $.extend({}, cookie_storage, { _prefix: cookie_session_prefix + window.name + '_' });
+            window.sessionCookieStorage = $.extend({}, cookie_storage, {_prefix: cookie_session_prefix + window.name + '_'});
         }
         window.cookieStorage = $.extend({}, cookie_storage);
         // cookieStorage API
@@ -521,14 +521,14 @@
         // If you set this property to true, all values set with the plugin will be stored as json to have typed values in any cases
 
         // localStorage API
-        $.localStorage = $.extend({}, storage, { _type: 'localStorage' });
+        $.localStorage = $.extend({}, storage, {_type: 'localStorage'});
         // sessionStorage API
-        $.sessionStorage = $.extend({}, storage, { _type: 'sessionStorage' });
+        $.sessionStorage = $.extend({}, storage, {_type: 'sessionStorage'});
     } else {
         // localStorage API
-        $.localStorage = $.extend({}, storage, { _type: 'localCookieStorage' });
+        $.localStorage = $.extend({}, storage, {_type: 'localCookieStorage'});
         // sessionStorage API
-        $.sessionStorage = $.extend({}, storage, { _type: 'sessionCookieStorage' });
+        $.sessionStorage = $.extend({}, storage, {_type: 'sessionCookieStorage'});
     }
     // List of all namespace storage
     $.namespaceStorages = {};

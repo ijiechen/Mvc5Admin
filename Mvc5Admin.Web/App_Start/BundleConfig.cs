@@ -27,7 +27,7 @@ namespace Mvc5Admin.Web
                       ));
             
             bundles.Add(new ScriptBundle("~/bundles/storage").Include(
-                    "~/Scripts/storage.min.js"));
+                    "~/Scripts/jquery.storageapi.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryEasing").Include(
                     "~/Scripts/jquery.easing.min.js"));
