@@ -205,7 +205,6 @@ C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Adm
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\zh-Hans\System.Web.Http.Owin.resources.dll
-C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.csprojResolveAssemblyReference.cache
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.Migrations.initdatabase.resources
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.csproj.GenerateResource.Cache
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.dll
@@ -224,3 +223,4 @@ C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Adm
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\vbc.exe.config
 C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\bin\roslyn\vbc.rsp
+C:\Users\zhanghailong.AD\Documents\test projects\Mvc5Admin\Mvc5Admin.Web\Mvc5Admin\Mvc5Admin.Web\obj\Debug\Mvc5Admin.Web.csprojResolveAssemblyReference.cache

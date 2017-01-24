@@ -1,5 +1,6 @@
 using System.Web;
 using System.Web.Optimization;
+using Microsoft.Ajax.Utilities;
 
 namespace Mvc5Admin.Web
 {
@@ -8,12 +9,13 @@ namespace Mvc5Admin.Web
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            BundleTable.EnableOptimizations = true;
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
-            
+
             bundles.Add(new ScriptBundle("~/bundles/matchMedia").Include(
                     "~/Scripts/matchMedia.js"));
 
@@ -23,9 +25,9 @@ namespace Mvc5Admin.Web
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"
-                     // ,"~/Scripts/respond.js"
+                      // ,"~/Scripts/respond.js"
                       ));
-            
+
             bundles.Add(new ScriptBundle("~/bundles/storage").Include(
                     "~/Scripts/jquery.storageapi.min.js"));
 
@@ -54,7 +56,7 @@ namespace Mvc5Admin.Web
 
             bundles.Add(new ScriptBundle("~/bundles/Angle").Include(
                     "~/Scripts/Angle.min.js"));
-            
+
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
@@ -76,6 +78,54 @@ namespace Mvc5Admin.Web
                       "~/Content/animate.min.css"));
             bundles.Add(new StyleBundle("~/Content/whirl").Include(
                       "~/Content/whirl.min.css"));
+
+            //Forms
+            bundles.Add(new StyleBundle("~/Content/tagsinputCss").Include(
+                        "~/Scripts/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"));
+            bundles.Add(new ScriptBundle("~/bundles/tagsinput").Include(
+                        "~/Scripts/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/sliderCtrlCss").Include(
+                        "~/Scripts/bootstrap-slider/dist/css/bootstrap-slider.min.css"));
+            bundles.Add(new ScriptBundle("~/bundles/sliderCtrl").Include(
+                        "~/Scripts/bootstrap-slider/dist/bootstrap-slider.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/moment").Include(
+                        "~/Scripts/moment/min/moment.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/datetimepickerCss").Include(
+                      "~/Scripts/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"));
+            bundles.Add(new ScriptBundle("~/bundles/datetimepicker").Include(
+                        "~/Scripts/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/colorPickerCss").Include(
+                        "~/Scripts/colorpicker/css/colorpicker.css"));
+            bundles.Add(new ScriptBundle("~/bundles/colorPicker").Include(
+                        "~/Scripts/colorpicker/js/bootstrap-colorpicker.js"));
+
+            bundles.Add(new StyleBundle("~/Content/select2Css").Include(
+                        "~/Scripts/select2-4.0.3/dist/css/select2.min.css"));
+            bundles.Add(new ScriptBundle("~/bundles/select2").Include(
+                        "~/Scripts/select2-4.0.3/dist/js/select2.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/chosenCss").Include(
+                        "~/Scripts/chosen_v1.6.2/chosen.min.css"));
+            bundles.Add(new ScriptBundle("~/bundles/chosen").Include(
+                        "~/Scripts/chosen_v1.6.2/chosen.jquery.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/inputmask").Include(
+                        "~/Scripts/Inputmask/dist/min/jquery.inputmask.bundle.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/filestyle").Include(
+                        "~/Scripts/bootstrap-filestyle-1.2.1/src/bootstrap-filestyle.min.js"));
+
+            //var bundle= new Bundle("~/Content/wysiwygCss",new CssMinify());
+
+            bundles.Add(new StyleBundle("~/Content/wysiwygCss").Include(
+                      "~/Scripts/bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.min.css"));
+            bundles.Add(new ScriptBundle("~/bundles/wysiwyg").Include(
+                        "~/Scripts/bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.min.js"));
+
         }
     }
 }

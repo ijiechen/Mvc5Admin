@@ -19,6 +19,7 @@
         <link href="/bundles/whirl.css?v=vwnGjMYObhemRs1vI5mYSdMDK5D-R9tQqXAOIrJxxAs1" rel="stylesheet" />*@
 
     <!-- =============== PAGE VENDOR STYLES =============== -->
+    @RenderSection("PageStyles", required: false)
     <!-- =============== BOOTSTRAP STYLES ===============-->
     @*@Styles.Render("~/Content/bootstrap")*@
     <link href="/Content/app/css/bootstrap.css" rel="stylesheet" type="text/css" id="bscss" />
@@ -27,8 +28,8 @@
     @*@Styles.Render("~/Content/app")
     @Styles.Render("~/Content/mvc-override")*@
     <link href="/Content/app/css/app.css" rel="stylesheet" type="text/css" id="maincss" />
-    <link href="/Content/mvc-override.css" rel="stylesheet" type="text/css" />
-    @*<link href="/bundles/mvc-override.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="/Content/mvc-override.css" rel="stylesheet" type="text/css" />*@
+    <link href="/bundles/mvc-override.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -1201,6 +1202,7 @@
         </footer>
     </div>
     <!-- =============== VENDOR SCRIPTS ===============-->
+    @*<script src="/bundles/jquery.js?v=HoRQ09kYLXZV2fRPio-4sFwem_LiuM00HkYeh777jks1"></script>*@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/matchMedia")
     @Scripts.Render("~/bundles/jquery")
@@ -1236,6 +1238,7 @@
 
     @*<script src="/bundles/screenfull?v=ooQl8eiyNiyghotzuutqwnzB6aZs1_ykb2bK5hBKidk1"></script>*@
     <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+    @RenderSection("PageScripts", required: false)
     <!-- =============== APP SCRIPTS ===============-->
     @*<script src="/bundles/Angle.js?v=iRLqdlmbhHhRDKCgfFr5YFy-OBwT2hOmRO-XweMNzKo1"></script>*@
 
