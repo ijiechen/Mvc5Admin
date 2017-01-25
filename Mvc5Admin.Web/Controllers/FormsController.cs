@@ -13,7 +13,13 @@ namespace Mvc5Admin.Web.Controllers
         {
             return View();
         }
+
         public ActionResult FormExtended()
+        {
+            return View();
+        }
+
+        public ActionResult FormValidation()
         {
             return View();
         }

@@ -26,7 +26,7 @@
 
     <!-- =============== APP STYLES ===============-->
     @*@Styles.Render("~/Content/app")
-    @Styles.Render("~/Content/mvc-override")*@
+        @Styles.Render("~/Content/mvc-override")*@
     <link href="/Content/app/css/app.css" rel="stylesheet" type="text/css" id="maincss" />
     @*<link href="/Content/mvc-override.css" rel="stylesheet" type="text/css" />*@
     <link href="/bundles/mvc-override.css" rel="stylesheet" type="text/css" />
@@ -186,18 +186,19 @@
         <!-- sidebar-->
         <aside class="aside">
             <!-- START Sidebar (left)-->
+
             <div class="aside-inner">
                 <nav class="sidebar" data-sidebar-anyclick-close="">
                     <!-- START sidebar nav-->
                     <ul class="nav">
                         <!-- START user info-->
                         <li class="has-user-block">
-                            <div id="user-block" class="collapse in" aria-expanded="true">
+                            <div id="user-block" class="collapse">
                                 <div class="item user-block">
                                     <!-- User picture-->
                                     <div class="user-block-picture">
                                         <div class="user-block-status">
-                                            <img src="/Content/Images/user/02.jpg" alt="Avatar" width="60" height="60" class="img-thumbnail img-circle">
+                                            <img src="/Content/Images/user/02.jpg" alt="Avatar" width="60" height="60" class="img-thumbnail img-circle" />
                                             <div class="circle circle-success circle-lg"></div>
                                         </div>
                                     </div>
@@ -362,6 +363,11 @@
                                         <span data-localize="sidebar.nav.element.COLOR">Colors</span>
                                     </a>
                                 </li>
+                                <li class="">
+                                    <a href="/Elements/NProgress" title="NProgress">
+                                        <span data-localize="sidebar.nav.element.NProgress">NProgress</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="">
@@ -447,14 +453,14 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
-                            <a href="#tables" title="Tables" data-toggle="collapse" class="collapsed" aria-expanded="false">
+                        <li class="">
+                            <a href="#tables" title="Tables" data-toggle="collapse">
                                 <em class="icon-grid"></em>
                                 <span data-localize="sidebar.nav.table.TABLE">Tables</span>
                             </a>
-                            <ul id="tables" class="nav sidebar-subnav collapse" aria-expanded="false" style="height: 0px;">
+                            <ul id="tables" class="nav sidebar-subnav collapse">
                                 <li class="sidebar-subnav-header">Tables</li>
-                                <li class="active">
+                                <li class="">
                                     <a href="/Tables/TableStandard" title="Standard">
                                         <span data-localize="sidebar.nav.table.STANDARD">Standard</span>
                                     </a>
@@ -808,6 +814,7 @@
                     <!-- END sidebar nav-->
                 </nav>
             </div>
+
             <!-- END Sidebar (left)-->
         </aside>
         <!-- offsidebar-->
@@ -1201,6 +1208,8 @@
             <span>© 2016 - Angle</span>
         </footer>
     </div>
+
+    @RenderSection("ModalSection", false)
     <!-- =============== VENDOR SCRIPTS ===============-->
     @*<script src="/bundles/jquery.js?v=HoRQ09kYLXZV2fRPio-4sFwem_LiuM00HkYeh777jks1"></script>*@
     @Scripts.Render("~/bundles/modernizr")
@@ -1245,5 +1254,18 @@
     @Scripts.Render("~/bundles/Angle")
     @RenderSection("scripts", required: false)
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var url = window.location;
+            // Will only work if string in href matches with location
+            $('ul.nav a[href="' + url.pathname + '"]').parent().addClass('active').parent().parent().addClass('active').children()[0].click();
+
+            // Will also work for relative and absolute hrefs
+            //$('ul.nav a').filter(function () {
+            //    return this.href == url;
+            //}).parent().addClass('active').parent().parent().addClass('active');
+        });
+
+    </script>
 </body>
 </html>

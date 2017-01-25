@@ -224,9 +224,12 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ElementsController.cs" />
+    <Compile Include="Controllers\ExtrasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\FormsController.cs" />
+    <Compile Include="Controllers\PagesController.cs" />
     <Compile Include="Controllers\TablesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -603,6 +606,15 @@
     <Content Include="Scripts\whirl\whirl-config.json" />
     <Content Include="Views\Forms\FormStandard.cshtml" />
     <Content Include="Views\Forms\FormExtended.cshtml" />
+    <Content Include="Views\Pages\Login.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage.cshtml" />
+    <Content Include="Views\Extras\Settings.cshtml" />
+    <Content Include="Views\Forms\FormValidation.cshtml" />
+    <Content Include="Views\Elements\IconsFont.cshtml" />
+    <Content Include="Views\Elements\IconsWeather.cshtml" />
+    <Content Include="Views\Elements\SweetAlert.cshtml" />
+    <Content Include="Views\Elements\Notifications.cshtml" />
+    <Content Include="Views\Elements\NProgress.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

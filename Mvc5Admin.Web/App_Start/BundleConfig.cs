@@ -52,6 +52,11 @@ namespace Mvc5Admin.Web
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/Parsley").Include(
+                        "~/Scripts/Parsley/dist/Parsley.min.js"
+                        , "~/Scripts/Parsley/dist/i18n/zh_cn.extra.js"
+                        , "~/Scripts/Parsley/dist/i18n/zh_cn.js"));
+
 
 
             bundles.Add(new ScriptBundle("~/bundles/Angle").Include(
@@ -119,12 +124,43 @@ namespace Mvc5Admin.Web
             bundles.Add(new ScriptBundle("~/bundles/filestyle").Include(
                         "~/Scripts/bootstrap-filestyle-1.2.1/src/bootstrap-filestyle.min.js"));
 
-            //var bundle= new Bundle("~/Content/wysiwygCss",new CssMinify());
+            bundles.Add(new ScriptBundle("~/bundles/skycons").Include(
+                        "~/Scripts/skycons/skycons.js"));
+
+            bundles.Add(new StyleBundle("~/Content/weatherIcons").Include(
+                        "~/Scripts/weather-icons/css/weather-icons.min.css"
+                        , "~/Scripts/weather-icons/css/weather-icons-wind.min.css"));
+            
+            bundles.Add(new StyleBundle("~/Content/loaders").Include(
+                        "~/Scripts/loaders/loaders.min.css"));
+            bundles.Add(new ScriptBundle("~/bundles/loaders").Include(
+                        "~/Scripts/loaders/loaders.css.js"));
 
             bundles.Add(new StyleBundle("~/Content/wysiwygCss").Include(
                       "~/Scripts/bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.min.css"));
             bundles.Add(new ScriptBundle("~/bundles/wysiwyg").Include(
                         "~/Scripts/bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/sweetalert").Include(
+                      "~/Scripts/sweetalert/dist/sweetalert.css"));
+            bundles.Add(new ScriptBundle("~/bundles/sweetalert").Include(
+                        "~/Scripts/sweetalert/dist/sweetalert.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/nprogress").Include(
+                      "~/Scripts/nprogress/custom.css"
+                      ,"~/Scripts/nprogress/nprogress.css"));
+            bundles.Add(new ScriptBundle("~/bundles/nprogress").Include(
+                        "~/Scripts/nprogress/nprogress.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/canvasbg").Include(
+                        "~/Scripts/canvasbg/canvasbg.js"));
+
+            bundles.Add(new StyleBundle("~/Content/fileupload").Include(
+                      "~/Scripts/jQuery-File-Upload/css/jquery.fileupload.css"
+                      , "~/Scripts/jQuery-File-Upload/css/jquery.fileupload.css"));
+            bundles.Add(new ScriptBundle("~/bundles/fileupload").Include(
+                         "~/Scripts/jQuery-File-Upload/js/jquery.iframe-transport.js"
+                       , "~/Scripts/jQuery-File-Upload/js/jquery.fileupload.js"));
 
         }
     }

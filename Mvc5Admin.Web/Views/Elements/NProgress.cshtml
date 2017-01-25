@@ -1,0 +1,341 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "nprogress";
+}
+@section PageStyles{
+    @Styles.Render("~/Content/nprogress")
+}
+<div class="mt30 text-center">
+    <h2 class="lh30">
+        Create Awesome
+        <b class="text-primary">Page Preloaders</b> with ease.
+    </h2>
+
+    <p class="lead"> Featuring realistic trickle animations to convince your users that something is happening!</p>
+</div>
+
+<div class="row center-block" style="max-width: 1200px;">
+    <div class="col-md-6">
+        <ul class="list-group controls">
+            <li class="list-group-item bg-light">
+                <h4 class="mt5">NProgress Page Loader</h4>
+                <a href="http://ricostacruz.com/nprogress/" title="nprogress website">http://ricostacruz.com/nprogress/</a>
+            </li>
+            <li class="list-group-item">
+                <button class="btn btn-default btn-sm play mr10" id="b-0">
+                    <i class="fa fa-play"></i>
+                </button>
+                NProgress
+                <b>.start()</b> - Starts/Shows the progress bar.
+            </li>
+            <li class="list-group-item">
+                <button class="btn btn-default btn-sm play mr10" id="b-50">
+                    <i class="fa fa-play"></i>
+                </button>
+                NProgress
+                <b>.set(0.5)</b> - Sets the progress bar to a specific interval.
+            </li>
+            <li class="list-group-item">
+                <button class="btn btn-default btn-sm play mr10" id="b-inc">
+                    <i class="fa fa-play"></i>
+                </button>
+                NProgress
+                <b>.inc()</b> - Moves the progress bar forward a small increment.
+            </li>
+            <li class="list-group-item list-group-item-danger">
+                <button class="btn btn-default btn-sm play mr10" id="b-100">
+                    <i class="fa fa-play"></i>
+                </button>
+                NProgress
+                <b>.done()</b> - Completes the progress bars page animation.
+            </li>
+        </ul>
+        <ul class="list-group controls">
+            <li class="list-group-item bg-light">
+                <h4 class="mv5">Page Loader Positions</h4>
+            </li>
+            <li class="list-group-item">
+                <button class="btn btn-default btn-sm play mr10" id="p-0">
+                    <i class="fa fa-play"></i>
+                </button>
+                Position Top -
+                <b>barPos:</b> '' (default no class required)
+            </li>
+            <li class="list-group-item">
+                <button class="btn btn-default btn-sm play mr10" id="p-1">
+                    <i class="fa fa-play"></i>
+                </button>
+                Position Header -
+                <b>barPos:</b> 'npr-header'
+            </li>
+            <li class="list-group-item">
+                <button class="btn btn-default btn-sm play mr10" id="p-2">
+                    <i class="fa fa-play"></i>
+                </button>
+                Position Bottom -
+                <b>barPos:</b> 'npr-bottom'
+            </li>
+            <li class="list-group-item list-group-item-danger hidden">
+                <button class="btn btn-default btn-sm play mr10" id="b-100">
+                    <i class="fa fa-play"></i>
+                </button>
+                NProgress
+                <b>.done()</b> - Completes the progress bars page animation.
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-group controls controls2">
+            <li class="list-group-item bg-light">
+                <h4 class="mv5">Page Loader Contextuals</h4>
+            </li>
+            <li class="list-group-item list-group-item-primary">
+                <button class="btn btn-default btn-sm play mr10" id="c-primary">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-primary"> - Primary</b>
+            </li>
+            <li class="list-group-item list-group-item-success">
+                <button class="btn btn-default btn-sm play mr10" id="c-success">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-success"> - Success</b>
+            </li>
+            <li class="list-group-item list-group-item-info">
+                <button class="btn btn-default btn-sm play mr10" id="c-info">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-info"> - Info</b>
+            </li>
+            <li class="list-group-item list-group-item-warning">
+                <button class="btn btn-default btn-sm play mr10" id="c-warning">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-warning"> - Warning</b>
+            </li>
+            <li class="list-group-item list-group-item-danger">
+                <button class="btn btn-default btn-sm play mr10" id="c-danger">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-danger"> - Danger</b>
+            </li>
+            <li class="list-group-item list-group-item-alert">
+                <button class="btn btn-default btn-sm play mr10" id="c-alert">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-alert"> - Alert</b>
+            </li>
+            <li class="list-group-item list-group-item-system">
+                <button class="btn btn-default btn-sm play mr10" id="c-system">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-system"> - System</b>
+            </li>
+            <li class="list-group-item list-group-item-dark">
+                <button class="btn btn-default btn-sm play mr10" id="c-dark">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-dark"> - Dark</b>
+            </li>
+            <li class="list-group-item list-group-item-muted bg-light dark" style="border-top-color: #AAA;">
+                <button class="btn btn-default light btn-sm play mr10" id="c-muted">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class="text-muted"> - Muted</b>
+            </li>
+            <li class="list-group-item list-group-item-light" style="border-color: #DDD;">
+                <button class="btn btn-default btn-sm play mr10" id="c-light">
+                    <i class="fa fa-play"></i>
+                </button>
+                Contextual
+                <b class=""> - Light</b>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="mw800 center-block mt50">
+    666
+</div>
+
+<!-- END row-->
+@section PageScripts{
+    @Scripts.Render("~/bundles/nprogress")
+
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            // Configure Progress Loader
+            NProgress.configure({
+                minimum: 0.15,
+                trickleRate: .07,
+                trickleSpeed: 360,
+                showSpinner: false,
+                barColor: '', // npr-warning, npr-success, npr-primary, etc (all contextuals available)
+                barPos: '' // 'null' - (default) - bar position: top of page
+                // 'npr-bottom' -  bar position: bottom of page header
+                // 'npr-header' -  bar position: below header
+            });
+
+            // Start Progress Loader
+            NProgress.start();
+            setTimeout(function () { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+
+            // On click event gather options and Init NProgress Plugin
+            var Selector = $('ul.controls').find('button');
+            Selector.on('click', function (e) {
+
+                var Target = e.target
+                var Node = e.target.nodeName;
+                var Selector = $(Target);
+                var Setting;
+
+                if (Node === "I") {
+                    Setting = Selector.parent('button').attr('id');
+                }
+
+                if (Node === "BUTTON") {
+                    Setting = Selector.attr('id');
+                }
+
+                switch (Setting) {
+
+                    // Loader Example Increments
+                    case 'b-0':
+                        NProgress.start();
+                        break;
+                    case 'b-50':
+                        NProgress.set(0.50);
+                        break;
+                    case 'b-inc':
+                        NProgress.inc();
+                        break;
+                    case 'b-100':
+                        NProgress.done(true);
+                        break;
+
+                        // Loader Positions
+                    case 'p-0':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: ''
+                        });
+                        NProgress.start();
+                        break;
+                    case 'p-1':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-header'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'p-2':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-bottom'
+                        });
+                        NProgress.start();
+                        break;
+
+                        // Loader Contextuals
+                    case 'c-primary':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-primary'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-success':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-success'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-info':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-info'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-warning':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-warning'
+                        });
+                        NProgress.start();
+                        break;
+
+                    case 'c-danger':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-danger'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-alert':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-alert'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-system':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-system'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-dark':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-dark'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-light':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-light'
+                        });
+                        NProgress.start();
+                        break;
+                    case 'c-muted':
+                        // ReConfigure Progress Loader
+                        NProgress.done(true);
+                        NProgress.configure({
+                            barPos: 'npr-muted'
+                        });
+                        NProgress.start();
+                        break;
+                }
+
+            });
+
+        });
+    </script>
+
+}
